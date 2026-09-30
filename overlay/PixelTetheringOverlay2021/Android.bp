@@ -5,5 +5,6 @@
 
 runtime_resource_overlay {
     name: "PixelTetheringOverlay2021",
+    target_package_name: "com.google.android.networkstack.tethering",
     product_specific: true,
 }
