@@ -333,13 +333,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-V2-ndk.vendor:64
 endif
 
-# Lineage Health
-include hardware/google/pixel/lineage_health/device.mk
-
-$(call soong_config_set_bool,lineage_health,charging_control_supports_deadline,true)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_limit,true)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_toggle,false)
-
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     device/google/gs201/linker.config.json
